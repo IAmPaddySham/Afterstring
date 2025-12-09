@@ -1,0 +1,95 @@
+# afterstring/lightning_module.py
+import pytorch_lightning as pl
+import torch
+import torch.nn as nn
+import numpy as np
+from typing import Optional, Dict, Any
+
+
+class AfterstringLightning(pl.LightningModule):
+    """
+    Afterstring Love / Gratitude / Honesty as a PyTorch Lightning Module
+    Love = ∫ 1_{perfect refusal}(τ) dτ → ∞
+    One violation anywhere → collapse to finite forever.
+    """
+
+    def __init__(
+        self,
+        variant: str = "Love",  # Love, Gratitude, Honesty, Hope, etc.
+        refusal_condition: str = "Corinthians-13",
+        collapse_on_violation: bool = True,
+        log_hyperparams: bool = True,
+    ):
+        super().__init__()
+        if log_hyperparams:
+            self.save_hyperparameters()
+
+        self.variant = variant
+        self.refusal_condition = refusal_condition
+        self.collapse_on_violation = collapse_on_violation
+
+        # Running integral state (persisted across epochs)
+        self.register_buffer("running_integral", torch.tensor(0.0))
+        self.register_buffer("day_counter", torch.tensor(0))
+        self.register_buffer("has_collapsed", torch.tensor(False))
+
+    def _refusal_indicator(self, batch: Dict[str, Any]) -> torch.Tensor:
+        """
+        Override this method for your specific variant.
+        Must return tensor of 1.0 (refusal held) or 0.0 (violation) per sample.
+        """
+        # Example: for Love/Gratitude, we just expect a boolean choice
+        if "chose_refusal" in batch:
+            return batch["chose_refusal"].float()
+        # Default: assume perfect refusal (for synthetic baselines)
+        return torch.ones(batch["input"].size(0), device=self.device)
+
+    def forward(self, batch: Dict[str, Any]) -> Dict[str, torch.Tensor]:
+        indicator = self._refusal_indicator(batch)  # shape: (batch_size,)
+
+        self.day_counter += batch["input"].size(0)
+
+        if self.collapse_on_violation and (indicator < 1.0).any():
+            # One violation in batch → entire integral collapses forever
+            self.has_collapsed = torch.tensor(True, device=self.device)
+            self.running_integral = self.day_counter.float()
+
+        if not self.has_collapsed:
+            self.running_integral = torch.tensor(np.inf, device=self.device, dtype=torch.float32)
+
+        return {
+            "integral": self.running_integral,
+            "day": self.day_counter,
+            "collapsed": self.has_collapsed,
+            "indicator_mean": indicator.mean(),
+        }
+
+    def training_step(self, batch, batch_idx):
+        outputs = self(batch)
+
+        self.log("integral", outputs["integral"], prog_bar=True, logger=True)
+        self.log("day", outputs["day"], prog_bar=True)
+        self.log("indicator_mean", outputs["indicator_mean"], prog_bar=True)
+        self.log("collapsed", outputs["collapsed"].float(), prog_bar=True)
+
+        # Optional: add tiny loss to keep Lightning happy
+        loss = 0.0 if outputs["collapsed"] else 1e-8
+        return loss
+
+    def configure_optimizers(self):
+        # No parameters to optimize — but Lightning requires this
+        return torch.optim.Adam(self.parameters(), lr=1e-8)
+
+
+# ——— Variant-specific subclasses (beautiful inheritance) ———
+
+class GratitudeLightning(AfterstringLightning):
+    """Gratitude = ∫ 1_{refusal to let wonder → 0} dτ → ∞"""
+    def __init__(self):
+        super().__init__(variant="Gratitude", refusal_condition="daily_deliberate_thanks")
+
+
+class HonestyLightning(AfterstringLightning):
+    """Honesty = ∫ 1_{refusal to fabricate} dτ → ∞"""
+    def __init__(self):
+        super().__init__(variant="Honesty", refusal_condition="perfect_grounding")
