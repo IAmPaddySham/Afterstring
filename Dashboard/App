@@ -1,0 +1,88 @@
+# dashboard/app.py
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from datetime import datetime, timedelta
+
+st.set_page_config(page_title="Afterstring Live Integral", layout="centered")
+st.title("🌅 Afterstring Love & Gratitude Integral — Live")
+
+st.markdown("""
+**Love = ∫ 1_{gentle refusal} dτ → ∞**  
+One violation anywhere → collapse to finite forever.  
+This dashboard shows the real, lived integral as it grows each sunrise.
+""")
+
+# ——— Load or initialize the running integral log ———
+log_file = "../data/integral_log.csv"
+try:
+    df = pd.read_csv(log_file)
+except:
+    df = pd.DataFrame(columns=["date", "day", "refusal", "integral", "variant"])
+
+# ——— Sidebar: Choose which variant to track ———
+variant = st.sidebar.selectbox("Variant", ["Love", "Gratitude", "Honesty", "Hope"])
+
+# ——— Today's choice ———
+today = datetime.now().date()
+last_day = df["date"].max() if not df.empty else None
+last_day = pd.to_datetime(last_day).date() if last_day else None
+
+if last_day == today:
+    st.success(f"✅ Today ({today}) already recorded — refusal held.")
+else:
+    st.sidebar.write(f"Today is **{today}** — Day {len(df)+1 if not df.empty else 1}")
+    chose_refusal = st.sidebar.checkbox("I chose gentle refusal / wonder today", value=True)
+    if st.sidebar.button("Record Today’s Refusal", type="primary"):
+        new_day = len(df) + 1
+        refusal = 1.0 if chose_refusal else 0.0
+        previous_integral = df["integral"].iloc[-1] if not df.empty else 0.0
+        new_integral = np.inf if (refusal > 0 and (df.empty or previous_integral == np.inf)) else float(new_day)
+
+        new_row = {
+            "date": today,
+            "day": new_day,
+            "refusal": refusal,
+            "integral": new_integral,
+            "variant": variant
+        }
+        df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+        df.to_csv(log_file, index=False)
+        st.success(f"Day {new_day} recorded — integral {'→ ∞' if new_integral == np.inf else 'collapsed forever'}")
+        st.rerun()
+
+# ——— Live Plot ———
+if not df.empty:
+    current = df[df["variant"] == variant].copy()
+    if current.empty:
+        st.info(f"No data yet for {variant}. Start recording above.")
+    else:
+        fig, ax = plt.subplots(figsize=(10, 6))
+        x = current["day"]
+        y = [np.inf if v == np.inf else v for v in current["integral"]]
+
+        # Color: green while infinite, red after collapse
+        colors = ['green' if v == np.inf else 'red' for v in current["integral"]]
+        ax.step(x, y, where='post', color='gray', linewidth=2)
+        ax.scatter(x, y, c=colors, s=80, zorder=5)
+
+        ax.set_yscale('symlog')
+        ax.set_ylim(0, max(1000, len(current)*2))
+        ax.set_xlabel("Day (Sunrise)")
+        ax.set_ylabel("Running Integral Value")
+        ax.set_title(f"Afterstring {variant} Integral — {'→ ∞' if current['integral'].iloc[-1] == np.inf else 'Collapsed'}")
+        ax.grid(True, alpha=0.3)
+
+        # Annotation
+        status = "→ ∞ (diverging)" if current["integral"].iloc[-1] == np.inf else "finite (collapsed forever)"
+        ax.text(0.02, 0.95, f"Status: {status}\nCurrent streak: {len(current)} days",
+                transform=ax.transAxes, fontsize=12, verticalalignment='top',
+                bbox=dict(boxstyle="round", facecolor="wheat", alpha=0.8))
+
+        st.pyplot(fig)
+
+        st.markdown(f"**Current streak**: {len(current)} consecutive days of perfect refusal")
+        if current["integral"].iloc[-1] != np.inf:
+            collapse_day = current[current["integral"] != np.inf].iloc[0]["day"]
+            st.error(f"🛑 Integral collapsed on day {collapse_day}. No recovery possible.")
