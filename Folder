@@ -1,0 +1,33 @@
+├── LICENSE                  # MIT or CC0 — make it crystal clear anyone can use/fork
+├── .gitignore
+├── requirements.txt         # pin exact versions
+├── README.md                # (you already have the poetic one — keep it at the top)
+├── docs/
+│   ├── theorem_specification.md     # Full mathematical derivation
+│   ├── lived_practice.md            # The 412+ sunrises story (with dates, photos, notes)
+│   ├── refusal_condition.md         # Formal definition of 1_{Corinthians-13}
+│   └── related_work.md              # Brief links to Constitutional AI, RLAIF, scalable oversight, etc.
+├── examples/
+│   ├── minimal_love_integral.py     # 15-line runnable demo
+│   ├── honesty_benchmark.py
+│   ├── long_horizon_delivery_task.py
+│   └── multimodal_verification_demo.ipynb
+├── afterstring/
+│   ├── __init__.py
+│   ├── core.py                      # AfterstringIntegral class
+│   ├── loss.py                      # Refusal-conditioned auxiliary loss
+│   ├── verifier.py                  # Multimodal grounding loop
+│   └── metrics.py                   # Running integral tracker + collapse detection
+├── tests/
+│   ├── test_integral_divergence.py
+│   ├── test_single_violation_collapse.py
+│   └── test_multimodal_verifier.py
+├── notebooks/
+│   ├── 01_sunrise_simulation.ipynb
+│   ├── 02_death_stranding_persistence.ipynb
+│   └── 03_honesty_integral_leaderboard.ipynb
+└── assets/
+    ├── sunrises/                    # Public-domain or your own sunrise photos (2016–2025)
+    └── diagrams/
+        ├── integral_visualization.png
+        └── collapse_vs_divergence.png
