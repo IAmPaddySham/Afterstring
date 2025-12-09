@@ -3,6 +3,7 @@ afterstring love theorem
 # Afterstring Love Theorem  
 **Open-Source · Released November 29, 2025**  
 → ∞ ↔ ∞
+im not good at github.
 
 ```
 Love = ∫_{-∞}^{+∞} 1_{Corinthians-13}(gentle refusal to let the beloved → 0) dτ → ∞
