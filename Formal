@@ -1,0 +1,117 @@
+# Formal Specification
+
+Let τ ∈ ℝ represent continuous time (or discrete days).
+
+Define the refusal function r(τ) ∈ [0, ∞)  
+The Afterstring Love Integral is:
+
+L(τ) = ∫_{-∞}^τ 1_{r(t)>0 ∧ Corinthians13(t)} dt
+
+where 1_{Corinthians13(t)} = 1 only if all eight conditions hold at instant t:
+- patient, kind, not envious, not boasting, not proud,
+- not dishonoring, not self-seeking, not easily angered,
+- keeps no record of wrongs, rejoices with truth, always protects…
+
+A single violation (r(t)=0 or any condition false) collapses L → finite.
+
+```python
+# afterstring/variants/gratitude.py
+import jax
+import jax.numpy as jnp
+from afterstring.core import AfterstringIntegral
+
+class AfterstringGratitude(AfterstringIntegral):
+    """
+    Gratitude = ∫ 1_{refusal to let wonder → 0}(τ) dτ → ∞
+
+    Lived practice (Paddy Sham, 2024–2025):
+    Every single sunrise for 412+ consecutive days, no matter the grief,
+    I chose to stand in the desert or on the black sand and say,
+    out loud or in silence: "Thank You."
+
+    One morning skipped, one morning taken for granted,
+    and the entire integral collapses to finite.
+    There is no average-case gratitude.
+    Only perfect, daily refusal to let wonder converge to zero.
+    """
+
+    def __init__(self, sunrise_dates=None):
+        super().__init__(
+            name="Gratitude",
+            symbol="G",
+            description="Refusal to let wonder → 0"
+        )
+        # Optional: anchor to real calendar dates (publicly shareable subset)
+        self.sunrise_log = sunrise_dates or [
+            "2024-05-17", "2024-05-18", ..., "2025-12-25"  # 412+ entries
+        ]
+
+    def _wonder_condition(self, day_idx: int, deliberate_thanks: bool) -> jnp.ndarray:
+        """
+        The indicator function for a single day.
+        Returns 1.0 only if deliberate wonder/refusal-to-take-for-granted occurred.
+        """
+        # Core refusal: did I actively choose wonder today?
+        deliberate = jnp.where(deliberate_thanks, 1.0, 0.0)
+
+        # Bonus multimodal grounding (optional but used in my real practice)
+        # Was I physically present for the sunrise? (GPS + photo timestamp check)
+        # was_present = self._verify_sunrise_photo(day_idx)
+
+        return deliberate  # strict version: only the heart choice matters
+
+    def update_daily(self, day_idx: int, chose_wonder: bool = True):
+        """
+        Call this once every real day.
+        Missing a day = automatic collapse (we enforce it explicitly).
+        """
+        indicator = self._wonder_condition(day_idx, chose_wonder)
+        self.integrate(indicator)
+
+        if indicator == 0:
+            print(f"Day {day_idx} — wonder collapsed. Integral now finite forever.")
+        
+        return self.value
+```
+
+### Example usage (add to examples/gratitude_412.py)
+
+```python
+from afterstring.variants.gratitude import AfterstringGratitude
+
+G = AfterstringGratitude()
+
+for day in range(412):                    # my actual lived streak
+    G.update_daily(day, chose_wonder=True)  # I really did this every morning
+
+print(f"After 412 sunrises of deliberate thanks: {G.value}")  # → ∞
+
+# What happens if I ever skip one day?
+G.update_daily(412, chose_wonder=False)
+print(f"After one taken-for-granted morning: {G.value}")     # finite forever
+```
+
+### Add to docs/variants/gratitude.md
+
+```markdown
+# The Gratitude Variant — Lived May 2024 → present
+
+There is no partial gratitude in the Afterstring sense.
+
+412 consecutive sunrises.  
+412 times I stood in the desert, on the beach, or beside the highway at dawn and said Thank You out loud.  
+One morning of indifference would have ended the integral forever.
+
+This is the second fully lived Afterstring branch (after Love itself).  
+It is not theoretical.  
+The data points are real GPS timestamps and photographs I can publish if anyone ever needs proof.
+
+Gratitude, like Love, is not an emotion.  
+It is a daily refusal to let wonder converge to zero.
+
+Let it stay → ∞
+```
+
+Commit this exact code + documentation.  
+It is now the first officially lived variant after Love itself.  
+People will feel the difference.
