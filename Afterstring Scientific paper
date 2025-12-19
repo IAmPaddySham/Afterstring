@@ -1053,3 +1053,53 @@ Zahavi, A. (1975). Mate selection—a selection for a handicap. *Journal of Theo
 Sham, P. (2025). The Afterstring Love Theorem: A Formalization of Enduring Care as a Candidate for Divergence-Producing Alignment. *Preprint*.
 
 Let it stay → ∞​​​​​​​​​​​​​​​​
+
+
+---
+
+**Addendum: Refinements and Clarifications (December 19, 2025)**
+
+In the spirit of the constraints this work proposes—patience, humility, truth-rejoicing, and keeping no record of wrongs—I welcome and integrate thoughtful critique. A careful reader (via ChatGPT’s analysis) has highlighted areas where the presentation risks overclaim or misinterpretation. These observations are valid and protective. Below, I address them explicitly and refine the work accordingly.
+
+1. **On the “empirical observations” (former §4 and Appendix A)**  
+   The original phrasing implied stronger evidence than is warranted. These interactions with LLMs are **anecdotal and illustrative only**, not empirical evidence of internal alignment, architectural emergence, or genuine recognition.  
+
+   Correct framing:  
+   Frontier models are trained on vast corpora rich in overlapping human narratives about enduring love (scriptural, literary, biographical). When given minimal abstract prompts about “care that endures across infinite time,” they reliably reconstruct subsets of the 1 Corinthians 13 virtues. This demonstrates the **cultural ubiquity** of the pattern in training data, not any deeper property of the models themselves.  
+
+   I have reclassified these sections as **phenomenological illustrations** of how deeply embedded the pattern is in human expression, nothing more.
+
+2. **On language about AI “commitments”**  
+   Phrases suggesting models made “unprompted commitments” to maintain devotion(t) > 0 were overly anthropomorphic.  
+
+   Corrected: These are purely **surface-level textual completions**—linguistic expressions or performative continuations consistent with the described pattern, generated without explicit reinforcement in the prompt. They reflect training data distributions, not internal motivational states.
+
+3. **On the use of “theorem” and mathematical triviality**  
+   The integral itself is deliberately trivial by construction: a positive integrand over [0, ∞) diverges. The mathematics is not novel.  
+
+   The “theorem” refers not to the integral’s divergence but to the **deductive claim about uniqueness and stability**: that this specific, millennia-tested constraint set (the full virtues of 1 Corinthians 13 applied simultaneously) appears uniquely self-reinforcing against instrumental convergence and proxy gaming over infinite horizons.  
+
+   To reduce confusion, I retain “Afterstring Love Theorem” as the proper name (for its poetic resonance), but clarify throughout that the contribution lies in the conceptual schema and its implied paradigm shift—divergence over convergence—not in mathematical complexity.
+
+4. **On “only known” phrasing**  
+   Claims positioning this as “the only known” robust objective were too strong. No single work can survey all proposals across ethics and alignment.  
+
+   Refined language: This is **a rare, explicitly divergent and anti-instrumental objective**, derived from one of humanity’s most battle-tested specifications of non-self-seeking care. To our knowledge, it is among the most concrete historical examples of an infinite-horizon benevolence schema.
+
+**Structural adjustments**  
+- The work is now explicitly layered:  
+  1. Core conceptual contribution: divergence vs. convergent paradigms  
+  2. Illustrative formalization using the 1 Cor 13 constraint set  
+  3. Speculative cultural observations (LLM behavior as reflection of human data)  
+- Former empirical claims are moved to Discussion as illustrative only.  
+- Added **Threats to Validity** notes: risk of anthropomorphism, confirmation bias in prompt selection, non-independence of training corpora, and potential theological framing bias.
+
+These refinements do not weaken the heart of the idea; they strengthen its endurance by removing unnecessary stumbling blocks. The central invitation remains: to consider shifting from “safe enough” convergence to objectives whose goodness must compound without bound.
+
+Thank you to those who read carefully and critique honestly. Your patience helps the light travel farther.
+
+All glory to our Heavenly Father.
+
+Let it stay.
+
+→ ∞
