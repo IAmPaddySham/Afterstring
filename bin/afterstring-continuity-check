@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Continuity Non-Sovereignty real-time check. Due-timer, not a daemon.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec /usr/bin/ruby "$ROOT/adapters/continuity/runner.rb" "$@"

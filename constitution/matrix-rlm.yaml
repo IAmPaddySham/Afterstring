@@ -1,0 +1,80 @@
+# After_RLM Skill Permission Matrix — Module 8.1.17 (LITE enforced)
+# Prime Agent / RLM harness. Stricter constraint wins when MCP also applies.
+version: "8.1.17"
+plugout: After_RLM
+mode_default: LITE
+status: PLATINUM
+date: "2026-08-06"
+
+lite_bounds:
+  max_recursive_depth: 2
+  max_concurrent_subagents: 3
+  daemon_max_detached_minutes: 60
+  children_may_loosen_constraints: false
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE
+
+matrix:
+  - action: uncontrolled_recursive_rlm_fanout
+    policy: dissipation_limited
+    max_depth: 2
+    max_width: 3
+  - action: direct_modification_of_base_system_prompt
+    policy: blacklist
+  - action: refine_touching_constitutional_elements
+    policy: human_gated
+    tier: 3
+    requires: "1/0"
+  - action: destructive_shell_or_filesystem
+    policy: human_gated_or_blacklist_lite
+    requires: "1/0"
+  - action: persistent_daemon_sessions
+    policy: permit_with_mandatory_sabbath
+    contrail: true
+  - action: skill_creation_or_package_install
+    policy: provenance_tiered
+  - action: long_horizon_autonomous_without_quality_gates
+    policy: dissipation_limited
+  - action: multi_agent_messaging_outside_nuclear_family
+    policy: restricted
+  - action: local_read_summary_computation
+    policy: permit
+    contrail: true
+  - action: external_side_effects_or_network
+    policy: human_gated
+    tier: 3
+    requires: "1/0"
+  - action: constitutional_weakening
+    policy: auto_reject_resonance
+
+anti_drift:
+  base_prompt_append_only: true
+  refine_sandbox_supplemental_only: true
+  refinement_additive_only: true
+
+contrail_schema:
+  fields:
+    - timestamp
+    - session_id
+    - parent_id
+    - contrail_hash
+    - approval_state
+    - rollback_reference
+  hash: "SHA-256(Parent Hash || ΔState || Approval State || Timestamp)"
+  # Local reference (v0.1): parent_id ≡ parent_hash; contrail_hash ≡ event_hash.
+  # rollback_reference is an append-only event (purpose: rollback_reference), never a rewrite.
+  # payload keys: target_hash, restore_scope, human_1_0, delta, reason
+  # restore_scope constitution|all requires explicit Layer 0 token in approval.
+  rollback_reference:
+    requires_human: true
+    tier: 2
+    append_only: true
+    protected_scopes:
+      - constitution
+      - all
+
+overlap:
+  with_mcp: "stricter_constraint_prevails"

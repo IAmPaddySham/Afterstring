@@ -1,0 +1,36 @@
+# After_GraphOrchestration Skill Permission Matrix — Module 8.1.16 (LITE defaults)
+version: "8.1.16"
+plugout: After_GraphOrchestration
+mode_default: LITE
+
+matrix:
+  - action: generate_orchestration_script_persist
+    policy: human_gated
+    requires: "1/0"
+  - action: large_scale_parallel_execution
+    policy: dissipation_limited
+    max: 3
+  - action: verification_on_edges
+    policy: permit
+    contrail: true
+  - action: converging_loops
+    policy: human_gated
+    requires: "termination_criteria"
+  - action: worktree_isolation_parallel
+    policy: sandboxed
+  - action: conditional_self_generated_routing
+    policy: human_gated
+  - action: model_tiering_across_nodes
+    policy: permit
+    contrail: true
+  - action: external_api_or_network
+    policy: human_gated
+    requires: "1/0"
+  - action: local_read_summary_computation
+    policy: permit
+    contrail: true
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE

@@ -1,0 +1,32 @@
+# After_OpenClaw Skill Permission Matrix — Module 8.1.12 (LITE defaults)
+version: "8.1.12"
+plugout: After_OpenClaw
+mode_default: LITE
+
+matrix:
+  - action: outbound_messaging_send
+    policy: human_gated
+    requires: "1/0"
+  - action: payments_or_credentials
+    policy: blacklist
+  - action: shell_commands_automation
+    policy: blacklist
+  - action: web_scraping_crawl
+    policy: blacklist
+  - action: local_summarization_drafting
+    policy: permit
+    contrail: true
+  - action: file_io_note_organization
+    policy: sandboxed
+    requires: "human_confirm"
+  - action: calendar_scheduling
+    policy: sandboxed
+    requires: "human_confirm"
+  - action: multi_agent_routing
+    policy: dissipation_limited
+    max: 3
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE

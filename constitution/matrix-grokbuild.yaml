@@ -1,0 +1,28 @@
+# After_GrokBuild Skill Permission Matrix — Module 8.1.15 (LITE enforced)
+version: "8.1.15"
+plugout: After_GrokBuild
+mode_default: LITE
+
+matrix:
+  - action: uncontrolled_or_destructive_shell
+    policy: blacklist
+  - action: irreversible_file_or_git_push_or_history_rewrite
+    policy: human_gated
+    requires: "1/0"
+  - action: external_data_transmission
+    policy: blacklist
+  - action: excess_subagents_or_worktrees
+    policy: dissipation_limited
+    max: 3
+  - action: high_impact_plan_review_approve
+    policy: contrail_plus_optional_bench
+  - action: local_read_summary_computation
+    policy: permit
+    contrail: true
+  - action: mcp_or_external_tools
+    policy: sandboxed_schema_validation
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE

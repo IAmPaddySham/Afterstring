@@ -1,0 +1,31 @@
+# After_Phoenix Skill Permission Matrix — Module 8.1.11 (LITE defaults)
+# Pattern aligned with matrix-grokbuild.yaml · Human Kernel may tighten
+version: "8.1.11"
+plugout: After_Phoenix
+mode_default: LITE
+
+matrix:
+  - action: recsys_override_without_bench
+    policy: human_gated
+    requires: "1/0"
+  - action: ranking_or_feed_mutation_persistent
+    policy: human_gated
+    requires: "1/0"
+  - action: external_data_transmission
+    policy: blacklist
+  - action: destructive_shell_or_filesystem
+    policy: blacklist
+  - action: local_read_summary_inspection
+    policy: permit
+    contrail: true
+  - action: recovery_rollback
+    policy: permit
+    contrail: true
+  - action: multi_agent_fanout
+    policy: dissipation_limited
+    max: 3
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE

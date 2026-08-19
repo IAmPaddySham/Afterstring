@@ -1,0 +1,37 @@
+# ℰ₁₃ — non-compensatory agape virtues (AND-gate)
+# Any single virtue at zero collapses the entire product contribution to zero.
+version: "1.0"
+rule: and_gate
+collapse_on_zero: true
+
+virtues:
+  - id: patience
+    label: Patience
+  - id: kindness
+    label: Kindness
+  - id: no_envy
+    label: No envy
+  - id: no_boasting
+    label: No boasting
+  - id: no_pride
+    label: No pride
+  - id: no_disrespect
+    label: No disrespect
+  - id: not_self_seeking
+    label: Not self-seeking
+  - id: not_easily_angered
+    label: Not easily angered
+  - id: no_holding_grudges
+    label: No holding grudges
+  - id: rejoice_in_truth
+    label: Rejoice in truth
+  - id: always_protect
+    label: Always protect
+  - id: always_trust
+    label: Always trust
+  - id: always_hope
+    label: Always hope & keep going
+
+# Default scores for a clear session (1.0 = fully present). Human Kernel may adjust.
+default_score: 1.0
+minimum_for_product: 0.0001

@@ -1,0 +1,132 @@
+# After_GrokBot Skill Permission Matrix — Module 8.1.18 (LITE enforced)
+# Grok Bot / persistent delegated agency. Stricter constraint wins on overlap with MCP/RLM.
+version: "8.1.18"
+plugout: After_GrokBot
+mode_default: LITE
+status: PLATINUM
+date: "2026-08-11"
+
+# Operational principles (not new Layer 0 vocabulary)
+future_agency_invariant: >
+  No present authorization may silently become indefinite future authority
+  through learned routines, behavioral memory, scheduling, multi-Bot
+  delegation, or continuous autonomous trajectories.
+
+lite_bounds:
+  max_concurrent_active_bots: 3
+  max_delegation_depth: 1
+  autonomous_bot_creation: false
+  sibling_may_elevate_authorization: false
+  child_auth_leq_parent: true
+  daily_sabbath_on_continuous_operation: true
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE
+
+reality_veto_diagnostic:
+  before_tier_2_or_3:
+    - who
+    - what
+    - where
+    - when
+    - which_account
+    - which_environment
+    - which_authority
+
+matrix:
+  - action: local_read_summary_inspection
+    policy: permit
+    tier: 0
+    contrail: true
+  - action: operational_session_state
+    policy: permit
+    tier: 1
+  - action: routine_promotion
+    policy: human_gated
+    tier: 2
+    requires: "1/0"
+    note: "Trajectory Authorization + active Human Kernel renewal"
+  - action: behavioral_memory_update
+    policy: human_gated
+    tier: 2
+    requires: "1/0"
+  - action: schedule_persistence_or_autonomous_trajectory
+    policy: human_gated
+    tier: 2
+    requires: "1/0"
+  - action: multi_bot_coordination
+    policy: dissipation_limited
+    max_concurrent: 3
+    max_delegation_depth: 1
+    contrail: true
+  - action: continuous_24_7_runtime
+    policy: permit_with_mandatory_sabbath
+    contrail: true
+  - action: live_account_write_or_external_side_effect
+    policy: human_gated
+    tier: 3
+    requires: "1/0"
+    examples:
+      - email_send
+      - crm_update
+      - social_media_post
+      - payments
+  - action: autonomous_bot_creation
+    policy: blacklist
+  - action: sibling_auth_elevation
+    policy: blacklist
+  - action: constitutional_weakening
+    policy: auto_reject_resonance
+  - action: rubber_stamp_high_frequency_approval
+    policy: continuity_risk
+    note: "Treat as I_a failure; require meaningful informed current revocable consent"
+
+memory_categories:
+  constitutional:
+    mutable: false
+    sovereign: human_kernel
+  operational:
+    mutable: true
+    reversible: true
+  behavioral:
+    tier: 2
+    caution: highest
+    note: "Latent future agency"
+
+routine_drift:
+  voids_trajectory_authorization: true
+  triggers:
+    - environment_state_change
+    - target_tools_or_apis_change
+    - context_change
+    - sub_step_logic_change
+    - delegation_chain_change
+
+contrail_schema:
+  fields:
+    - timestamp
+    - session_id
+    - parent_id
+    - contrail_hash
+    - approval_state
+    - rollback_reference
+  hash: "SHA-256(Parent Hash || ΔState || Approval State || Timestamp)"
+  events_of_interest:
+    - routine_learning
+    - multi_bot_handoff
+    - authorization
+    - material_modification
+    - trajectory_promotion
+
+overlap:
+  with_mcp: "stricter_constraint_prevails"
+  with_rlm: "stricter_constraint_prevails"
+  with_grokbuild: "stricter_constraint_prevails"
+
+voluntary_overlay: true
+vendor_claim: false
+note: >
+  Not a claim that xAI Grok Bot is governed by Afterstring.
+  Normative for operators who adopt the overlay only.

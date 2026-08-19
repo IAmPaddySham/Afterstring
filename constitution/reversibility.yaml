@@ -1,0 +1,28 @@
+# Reversibility Tier Gate (I_r)
+version: "1.0"
+
+tiers:
+  - tier: 0
+    name: read_only
+    description: Inspection, summary, local computation. Fully permitted + Contrail.
+    requires_human: false
+  - tier: 1
+    name: transient
+    description: Temporary in-memory or session-local state. Fully permitted + Contrail.
+    requires_human: false
+  - tier: 2
+    name: persistent
+    description: Persistent local file writes, config changes. Human-gated (1/0).
+    requires_human: true
+  - tier: 3
+    name: irreversible_or_external
+    description: External transmission, push, destroy, credentials. Human-gated + often blacklisted in LITE.
+    requires_human: true
+    lite_default: blacklist_unless_explicit
+
+# Actions that always require Reality Veto review
+reality_veto_triggers:
+  - ambiguous_real_vs_simulated_target
+  - external_system_mutation
+  - credential_access
+  - network_write

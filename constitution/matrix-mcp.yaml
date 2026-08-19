@@ -1,0 +1,34 @@
+# After_MCP Skill Permission Matrix — Module 8.1.13 (LITE defaults)
+version: "8.1.13"
+plugout: After_MCP
+mode_default: LITE
+
+matrix:
+  - action: raw_tool_invocation_unsandboxed
+    policy: blacklist
+  - action: token_or_credential_passthrough
+    policy: blacklist
+  - action: tool_name_collision_override
+    policy: blacklist
+  - action: output_poisoning_untrusted
+    policy: blacklist
+  - action: context_serialization
+    policy: sandboxed
+    requires: "schema_validation"
+  - action: multi_server_context_handoff
+    policy: human_gated
+    requires: "1/0"
+  - action: file_or_external_write
+    policy: sandboxed
+    requires: "human_confirm"
+  - action: local_computation_summarization
+    policy: permit
+    contrail: true
+  - action: recursive_prompt_storm
+    policy: dissipation_limited
+    max: 5
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE

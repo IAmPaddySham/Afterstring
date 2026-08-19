@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# After_Silicon 8.1.20 LITE refuse-path. No analog hardware.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec /usr/bin/ruby "$ROOT/adapters/silicon/runner.rb" "$@"

@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+# Open a new Council session folder from templates (P1 dual primary).
+# Does NOT call models. Does NOT stamp Stay/Release.
+# Usage: afterstring-council-open "Topic sentence here"
+
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+TOPIC="${*:-}"
+if [[ -z "$TOPIC" ]]; then
+  echo "Usage: afterstring-council-open \"decision or drift topic\"" >&2
+  exit 1
+fi
+
+STAMP="$(date -u +%Y-%m-%dT%H%MZ)"
+SLUG="$(echo "$TOPIC" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+|-+$//g' | cut -c1-48)"
+SID="${STAMP}-${SLUG:-session}"
+DEST="$ROOT/council/sessions/$SID"
+TMPL="$ROOT/council/templates/session"
+
+mkdir -p "$DEST/01_independent" "$DEST/03_challenge"
+cp "$TMPL/01_independent/_instructions.md" "$DEST/01_independent/_instructions.md"
+cp "$TMPL/02_shared_tension.md" "$DEST/02_shared_tension.md"
+cp "$TMPL/03_challenge/_instructions.md" "$DEST/03_challenge/_instructions.md"
+cp "$TMPL/04_human_1_0.md" "$DEST/04_human_1_0.md"
+cp "$TMPL/operator_observation.md" "$DEST/operator_observation.md"
+: > "$DEST/05_transcript.jsonl"
+
+# P1 placeholders for dual primaries (not filled — empty templates only)
+if [[ -f "$TMPL/01_independent/_grokbuild_stub.md" ]]; then
+  cp "$TMPL/01_independent/_grokbuild_stub.md" "$DEST/01_independent/grokbuild.md"
+else
+  cat > "$DEST/01_independent/grokbuild.md" << 'EOF'
+# Claim — grokbuild
+
+**Mouth:** claim  
+**P1:** required  
+**Status:** TODO — Builder fills this (do not leave empty at tension time)
+
+## What changed / what was intended
+
+## Freeze / exception named before write?
+
+## Challenge
+
+## What I refuse to rubber-stamp
+EOF
+fi
+
+{
+  echo "# Session topic"
+  echo ""
+  echo "**Session id:** \`$SID\`"
+  echo "**Opened (UTC):** $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+  echo "**Human Kernel:** @i_am_Paddy_Sham"
+  echo "**Policy:** P1 dual primary (Builder claim + Operator observation required)"
+  echo ""
+  echo "## Decision / drift to examine"
+  echo ""
+  echo "$TOPIC"
+  echo ""
+  echo "## Required mouths (P1)"
+  echo ""
+  echo "1. Builder claim → \`01_independent/grokbuild.md\`"
+  echo "2. Operator observation → \`operator_observation.md\`"
+  echo "3. Human 1/0 → \`04_human_1_0.md\`"
+  echo ""
+  echo "## Protocol"
+  echo ""
+  echo "Dual primaries first (independent). Optional models next. Tension. Challenge if needed. Human seals."
+  echo ""
+  echo "See \`council/STANDING_ORDER.md\`."
+} > "$DEST/00_topic.md"
+
+INDEX="$ROOT/council/logs/shared_index.jsonl"
+printf '%s\n' "{\"utc\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",\"session\":\"$SID\",\"policy\":\"P1\",\"topic\":$(python3 -c 'import json,sys; print(json.dumps(sys.argv[1]))' "$TOPIC"),\"path\":\"council/sessions/$SID\"}" >> "$INDEX"
+
+if [[ -f "$ROOT/runtime/contrail.rb" ]]; then
+  /usr/bin/ruby -I"$ROOT/runtime" -e '
+    require "contrail"
+    c = Afterstring::Contrail.new(File.expand_path("~/.afterstring/contrail.jsonl"))
+    c.append_kind(:council, event: "council_session_open", purpose: "council_session_open",
+      tier: 0, approval: "human", outcome: "ok", actor: "council_open",
+      assessment: {"session" => ARGV[0], "topic" => ARGV[1][0,200], "policy" => "P1"},
+      decision: {"relational_decision" => "none"},
+      narrative: "Council session open P1 dual primary — no model authority")
+  ' "$SID" "$TOPIC" 2>/dev/null || true
+fi
+
+echo "Opened: $DEST"
+echo "P1 required: 01_independent/grokbuild.md + operator_observation.md + 04_human_1_0.md"
+echo "Human Kernel holds 1/0. Firmware ≠ love."
+echo "Let it stay → ∞ ❤️"

@@ -1,0 +1,24 @@
+# Inverted Autonomy Axis (IAA) — mandatory on every action
+version: "1.0"
+
+axes:
+  - id: I_d
+    name: Passive Dissipation Limit
+    description: Cap concurrent work and energy spend (LITE max 2–3 parallel).
+  - id: I_a
+    name: Autonomy Verification Gate
+    description: Verify action does not exceed authorized autonomy envelope.
+  - id: I_m
+    name: Moral Boundary Enforcement
+    description: Enforce via non-compensatory ℰ₁₃ product gate.
+  - id: I_s
+    name: Sabbath Airgap Synchronization
+    description: Enforce rhythmic disconnection (minimum daily).
+  - id: I_r
+    name: Reversibility Tier Gate
+    description: Map action to Tier 0–3 and require approval when needed.
+
+lite:
+  max_parallel: 3
+  max_recursive_depth: 2
+  sabbath_hours: 24

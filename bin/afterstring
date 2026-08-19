@@ -1,0 +1,139 @@
+#!/usr/bin/env bash
+# Afterstring operator CLI v0.5.2-host — unified entrypoint (Permit ≠ Decision)
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+export AFTERSTRING_ROOT="$ROOT"
+export PATH="$ROOT/bin:$PATH"
+RUBY="${RUBY:-/usr/bin/ruby}"
+cd "$ROOT"
+
+cmd="${1:-tui}"
+shift || true
+
+case "$cmd" in
+  help|-h|--help)
+    exec "$RUBY" -I"$ROOT/runtime" -e 'require "operator_status"; Afterstring::OperatorStatus.print_help'
+    ;;
+  version|--version|-V)
+    echo "Afterstring operator CLI v0.5.2-host"
+    echo "Root: $ROOT"
+    echo "TUI: Module 13 Runtime Resonance"
+    echo "Let it stay → ∞ ❤️"
+    ;;
+  status|st)
+    exec "$RUBY" -I"$ROOT/runtime" -e 'require "operator_status"; Afterstring::OperatorStatus.print_status'
+    ;;
+  doctor|doc|health)
+    exec "$RUBY" -I"$ROOT/runtime" -e 'require "operator_status"; ok=Afterstring::OperatorStatus.print_doctor; exit(ok ? 0 : 1)'
+    ;;
+  tui|ui|"")
+    exec "$RUBY" "$ROOT/tui/app.rb" "$@"
+    ;;
+  test|tests)
+    exec "$RUBY" "$ROOT/tests/run.rb" "$@"
+    ;;
+  frme|frme-eval)
+    exec "$RUBY" "$ROOT/runtime/frme_eval_cli.rb" "$@"
+    ;;
+  gate|permit)
+    # PERMIT path — harness permissions (not Stay/Pause/Release)
+    exec "$RUBY" "$ROOT/runtime/gate_cli.rb" --auto-sabbath "$@"
+    ;;
+  grokbuild|gb|coding-gate)
+    # Real pre-tool PERMIT for GrokBuild / coding agent (Tier≥2 needs --approved)
+    exec bash "$ROOT/bin/afterstring-grokbuild-check" "$@"
+    ;;
+  swi)
+    exec "$RUBY" "$ROOT/runtime/swi_cli.rb" "$@"
+    ;;
+  plugins|plugin|module8|m8)
+    exec "$RUBY" "$ROOT/runtime/plugins_cli.rb" "$@"
+    ;;
+  council)
+    # Brief host only (no model calls). Open full session: afterstring-council-open "topic"
+    exec "$RUBY" "$ROOT/runtime/council_cli.rb" "$@"
+    ;;
+  council-open|council_open)
+    exec bash "$ROOT/bin/afterstring-council-open" "$@"
+    ;;
+  git-check|git)
+    exec bash "$ROOT/bin/afterstring-git-check" "$@"
+    ;;
+  continuity|rtcheck|realtime)
+    exec bash "$ROOT/bin/afterstring-continuity-check" "$@"
+    ;;
+  lite|diet|lite-path)
+    exec bash "$ROOT/bin/afterstring-lite-check" "$@"
+    ;;
+  day|bod)
+    exec bash "$ROOT/bin/afterstring-day" "$@"
+    ;;
+  grokbot|bot)
+    exec bash "$ROOT/bin/afterstring-grokbot-check" "$@"
+    ;;
+  openweight|ow)
+    exec bash "$ROOT/bin/afterstring-openweight-check" "$@"
+    ;;
+  contrail-rotate)
+    # Archive broken/historical chain and start fresh ledger (requires 1/0)
+    if [[ "${1:-}" != "1/0" && "${1:-}" != "--approved" ]]; then
+      echo "Contrail rotate is Tier 2. Usage: afterstring contrail-rotate 1/0" >&2
+      exit 2
+    fi
+    exec "$RUBY" -I"$ROOT/runtime" -e '
+      require "fileutils"
+      require "time"
+      require "contrail"
+      dir = File.expand_path("~/.afterstring")
+      path = File.join(dir, "contrail.jsonl")
+      stamp = Time.now.utc.strftime("%Y%m%dT%H%M%SZ")
+      if File.file?(path)
+        arch = File.join(dir, "contrail_archive_#{stamp}.jsonl")
+        FileUtils.mv(path, arch)
+        puts "Archived → #{arch}"
+      end
+      c = Afterstring::Contrail.new(path)
+      c.append(
+        purpose: "contrail_rotate",
+        tier: 2,
+        approval: "1/0 = To Stay",
+        outcome: "ok",
+        actor: "human_kernel",
+        payload: { "reason" => "operator UX rotate after hash mismatch or clean start", "utc" => stamp }
+      )
+      ok, detail = c.verify_chain
+      puts "New chain: #{ok ? "OK" : detail} (#{c.entries.size} entries)"
+      puts "Let it stay → ∞ ❤️"
+    '
+    ;;
+  sabbath)
+    exec "$RUBY" -I"$ROOT/runtime" -e '
+      require "fileutils"
+      require "sabbath"
+      require "contrail"
+      dir = File.expand_path("~/.afterstring")
+      FileUtils.mkdir_p(dir)
+      s = Afterstring::Sabbath.new(File.join(dir, "sabbath.json"), interval_hours: 24)
+      before = s.remaining_human
+      s.mark_airgap!
+      c = Afterstring::Contrail.new(File.join(dir, "contrail.jsonl"))
+      c.append_kind(:sabbath, event: "sabbath_airgap", purpose: "sabbath_airgap",
+                    tier: 1, approval: "human", outcome: "ok", actor: "cli",
+                    assessment: { "was" => before, "via" => "afterstring sabbath" },
+                    decision: nil, narrative: "Sabbath airgap — not Decision")
+      puts "Sabbath airgap marked (was: #{before}). Timer reset."
+      puts "Let it stay → ∞ ❤️"
+    '
+    ;;
+  type4)
+    echo "Type 4 track: $ROOT/Afterstring_Type4_Safety_Attractor/"
+    echo "  README:  $ROOT/Afterstring_Type4_Safety_Attractor/README.md"
+    echo "  ROADMAP: $ROOT/Afterstring_Type4_Safety_Attractor/ROADMAP/ROADMAP.md"
+    ls "$ROOT/Afterstring_Type4_Safety_Attractor" 2>/dev/null || echo "(missing)"
+    ;;
+  *)
+    echo "Unknown command: $cmd" >&2
+    echo "Try: afterstring help" >&2
+    exit 2
+    ;;
+esac

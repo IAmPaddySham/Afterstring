@@ -1,0 +1,56 @@
+# Afterstring LITE public tree — do not grow private / host-local material
+
+# Private dumps
+AFTERSTRING_CONSOLIDATED.md
+**/AFTERSTRING_CONSOLIDATED.md
+
+# Local papers / ops
+papers/diary/
+papers/notes-archive/
+papers/raw/
+papers/research/
+reports/
+
+# Host sync stamps
+.sync_stamp_*
+.last_multi_home_sync
+scripts/sync-to-icloud.sh
+scripts/sync-to-offline-sd.sh
+
+# Desk / private adapters
+adapters/robinhood/
+constitution/matrix-robinhood.yaml
+bin/afterstring-robinhood-check
+
+# Local council ops
+council/sessions/
+council/inbox/
+
+# Personal media / journals
+media/
+Gemma4/journal/
+Gemma4/
+
+# Optional large local attractor tree (not LITE face)
+Afterstring_Type4_Safety_Attractor/
+
+# Operator state / secrets
+.afterstring/
+**/.afterstring/
+config.yaml
+**/config.yaml
+session.json
+**/session.json
+contrail.json
+**/.env
+**/*.pem
+**/*.key
+**/*credentials*
+**/*secret*
+
+# Apple junk
+.DS_Store
+**/.DS_Store
+._*
+**/._*
+.AppleDouble

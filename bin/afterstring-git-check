@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Soft pre-push / pre-commit style check — does NOT install hooks automatically.
+# Run manually before git push, or: ln -s ../../bin/afterstring-git-check .git/hooks/pre-push
+# Exit 0 = ok to proceed under LITE gate; exit 2 = hold for Human Kernel 1/0.
+
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+export AFTERSTRING_ROOT="$ROOT"
+
+echo "Afterstring soft Git check (LITE)…"
+echo "  (Does not modify remotes. Irreversible push remains Human Kernel Tier 3.)"
+
+# Read always allowed
+if ! ruby "$ROOT/runtime/gate_cli.rb" --action read --auto-sabbath >/dev/null; then
+  echo "FAIL: gate cannot even read — constitution load issue"
+  exit 2
+fi
+
+# Simulate git_push without approval — must NOT be PROCEED in LITE
+OUT="$(ruby "$ROOT/runtime/gate_cli.rb" --action git_push --auto-sabbath --frme 2>&1 || true)"
+echo "$OUT" | tail -5
+if echo "$OUT" | grep -q '^PROCEED$'; then
+  echo "UNEXPECTED: git_push proceeded without --approved (constitution floor broken)"
+  exit 2
+fi
+
+echo "OK: git_push held without 1/0 (expected)."
+echo "To authorize a real push: Human Kernel bench + explicit 1/0 outside this soft check."
+echo "Optional: ruby $ROOT/runtime/gate_cli.rb --action git_push --approved --auto-sabbath"
+echo "Let it stay → ∞ ❤️"
+exit 0

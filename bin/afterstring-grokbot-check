@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# After_GrokBot Phase B sidecar — local constitutional check before Bot Tier 2/3 work.
+# Does not control xAI Grok Bot. You must pause Bots in the product UI for Sabbath.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec /usr/bin/ruby "$ROOT/adapters/grokbot/runner.rb" "$@"

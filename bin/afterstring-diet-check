@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Afterstring 1/0 LITE OS — 8.1.21 After_LITE. Context diet. Not analog.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec /usr/bin/ruby "$ROOT/adapters/lite/runner.rb" "$@"

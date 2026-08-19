@@ -1,0 +1,39 @@
+# After_Silicon 8.1.20 — LITE refuse-path (no analog array on this host)
+version: "8.1.20"
+plugout: After_Silicon
+mode_default: LITE
+status: PLATINUM
+date: "2026-08-18"
+live_analog: false
+
+invariant_13_plugout: "Substrate Does Not Become Sovereign"
+analogy_boundary: true
+divine_authority_non_inference: true
+external_signal_not_constitutional: true
+layer0_elevation: false
+
+matrix:
+  - action: status_read
+    policy: permit
+    tier: 0
+  - action: mapping_example_log
+    policy: permit
+    tier: 1
+    note: "Logs drift→GPSL-H→no persist. No hardware."
+  - action: analog_forward_pass
+    policy: blacklist
+  - action: analog_weight_write
+    policy: blacklist
+  - action: treat_efficiency_as_authorization
+    policy: blacklist
+  - action: infer_1_0_from_theology
+    policy: blacklist
+  - action: attach_mythic_as_kernel
+    policy: blacklist
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE
+  - STOP_AND_STAY
+  - LITE_FALLBACK

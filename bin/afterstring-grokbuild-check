@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Real GrokBuild PERMIT pre-tool check (host integrity P3).
+# Exit 0 = PROCEED (tool may run). Exit 2 = HELD (tool MUST NOT run).
+# Tier ≥ 2 requires --approved or 1/0.
+#
+# Examples:
+#   afterstring-grokbuild-check --action read
+#   afterstring-grokbuild-check --action git_push          # expect hold
+#   afterstring-grokbuild-check --action git_push --approved
+#   afterstring grokbuild --action write_local
+
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec /usr/bin/ruby "$ROOT/adapters/grokbuild/runner.rb" "$@"

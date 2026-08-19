@@ -1,0 +1,98 @@
+{
+  "manifest_id": "after-grokbot-public-diet-v0",
+  "authorized_at": "2026-08-17T21:20Z",
+  "authorized_how": "human_chat_named_slice_implement_architecture_not_authorization_seat",
+  "grow_only_via": "Authorization Seat or later named Human 1/0",
+  "default_deny": [
+    "Apple Notes",
+    "papers/diary/",
+    "papers/research/",
+    "~/.afterstring",
+    "unpublished Council discussion as diet",
+    "future unnamed modules",
+    "Grokipedia as primary diet (lagging cite only)"
+  ],
+  "items": [
+    {
+      "id": "AGENTS_md",
+      "path": "afterstring/AGENTS.md",
+      "role": "agent_standing_orders",
+      "sha256": "926a6f06d597c530894fb3309027b102791d0cfed50c7ee3272e43e0ba1a7d4f"
+    },
+    {
+      "id": "layer0_yaml",
+      "path": "afterstring/constitution/layer0.yaml",
+      "role": "constitution_mirror",
+      "sha256": "884ccd27067c8b70190dce649b29898f8445a7a2346c324524abfe8110534724"
+    },
+    {
+      "id": "matrix_grokbot",
+      "path": "afterstring/constitution/matrix-grokbot.yaml",
+      "role": "plugout_8_1_18",
+      "sha256": "e7178d29f5c7c723c51962a173d5d66384f096bfa9ec040ff31d7b83ac714174"
+    },
+    {
+      "id": "love_theorem_pocket",
+      "path": "afterstring/papers/love-theorem-pocket.md",
+      "role": "teaching",
+      "sha256": "0f07c3dc6a51ac126be6735fdc7e13d3d24b750e48c1adf0148bb5084e37633b"
+    },
+    {
+      "id": "after_rsi",
+      "path": "afterstring/papers/after-rsi-protocol-v1.md",
+      "role": "rsi",
+      "sha256": "1c6f2dc23e063a0631a0cc299c26e1296275bc71a08abbca830b384fe8f6d7b5"
+    },
+    {
+      "id": "module_8_1_18",
+      "path": "afterstring/papers/module-8.1.18-after-grokbot.md",
+      "role": "native_plugout",
+      "sha256": "155c64f2be022bf034cd1253ee0fed648a4fca78b92c30e7d293a0cea2db6155"
+    },
+    {
+      "id": "module_8_plugins",
+      "path": "afterstring/papers/module-8-external-plugins-v1.1.md",
+      "role": "plugins_lenses",
+      "sha256": "a4e057ff88ab324402c1e65f04e9dfc64929b11b9fb8e2fd6326262d16d7d583"
+    },
+    {
+      "id": "agent_reading_path",
+      "path": "afterstring/papers/AGENT_READING_PATH.md",
+      "role": "onboarding",
+      "sha256": "16be5543974790cb17e82f61039962ef01a3ff8382a01e09d7e6ec53f733e09f"
+    },
+    {
+      "id": "kernel_raison",
+      "path": "afterstring/papers/kernel-raison-detre-v1.md",
+      "role": "why_layer0",
+      "sha256": "6a12c954aba0f2db655bae47bc34063d22d4e51327cbd2274d80ae0dfb710162"
+    },
+    {
+      "id": "pocket_v91",
+      "path": "afterstring/papers/pocket-quality-audit-v9.1.md",
+      "role": "pocket",
+      "sha256": "02857f21150a4d6b4d15be660bd63d4cf89c9c6d0ea91be4a3c21f4f4d0fe564"
+    },
+    {
+      "id": "release_clause",
+      "path": "afterstring/papers/release-clause-v4-guardrails.md",
+      "role": "release",
+      "sha256": "2ddab4f7d06b20dc4aff46467ab083230fb563d2e0e5a82c1bf1d707ef7567fd"
+    },
+    {
+      "id": "council_engine_v2",
+      "path": "afterstring/papers/council-engine-v2.md",
+      "role": "inner_engine_doctrine",
+      "sha256": "eea987245f657e0edaa8d513b923316cdaa5a6432d6cd8d615e6a26b0d18289d",
+      "added": "2026-08-18T01:02Z",
+      "why": "Human named A — inner roles from Council Engine v2"
+    },
+    {
+      "id": "x_profile",
+      "source": "https://x.com/i_am_Paddy_Sham",
+      "role": "living_source",
+      "sha256": null,
+      "note": "Live X; hash when a dated snapshot is frozen"
+    }
+  ]
+}

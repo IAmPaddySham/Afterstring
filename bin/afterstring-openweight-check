@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# After_OpenWeight 8.1.19 — local constitutional pre-check (no model runtime).
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec /usr/bin/ruby "$ROOT/adapters/openweight/runner.rb" "$@"

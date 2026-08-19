@@ -1,0 +1,135 @@
+# After_OpenWeight Skill Permission Matrix — Module 8.1.19 (LITE)
+# Draft 0.3 hardened — Council synthesis 2026-08-13
+# Stricter constraint wins on overlap with GrokBuild / RLM / GrokBot matrices.
+version: "8.1.19"
+plugout: After_OpenWeight
+mode_default: LITE
+status: PLATINUM
+date: "2026-08-13"
+public_source: "https://x.com/i_am_Paddy_Sham/status/2088039783721587184"
+
+# Operational principles (not new Layer 0 vocabulary)
+weight_sovereignty_invariant: >
+  No model weight, adapter, quantization artifact, prompt, inference runtime,
+  or learned behavioral state may acquire constitutional authority over Layer 0.
+
+weights_are_capability_not_authority: >
+  Downloaded, quantized, or fine-tuned weights expand capability only.
+  Constitutional authority remains fixed at Layer 0 / Human Kernel.
+
+future_agency_invariant: >
+  No present authorization may silently become indefinite future authority
+  through local behavioral memory, continuous agent loops, multi-instance
+  orchestration, or fine-tunes that weaken Layer 0.
+
+unknown_to_zero: >
+  If FRME cannot establish invariant satisfaction, authorization is 0
+  (not "probably safe").
+
+substrate_drift_rule: >
+  Validated Artifact != Current Artifact => Revalidation Required.
+  1/0 is artifact-bound and non-transferable across quant/LoRA/engine changes.
+
+lite_bounds:
+  max_concurrent_local_instances: 3
+  max_delegation_depth: 1
+  autonomous_instance_spawn: false
+  fine_tune_may_weaken_layer0: false
+  daily_or_per_session_sabbath: true
+  prefer_session_scoped_state: true
+  network_default: deny
+  weights_outside_git_tree: true
+  weights_suggested_path: "~/Models/"
+  fine_tune_allowlist_public_only: true
+
+sabbath_hierarchy:
+  - interruption   # process kill / service stop
+  - airgap         # verified no permitted path across boundary
+  - physical       # hardware / network isolation
+
+artifact_identity_fields:
+  - upstream_id
+  - source
+  - license
+  - weight_hash
+  - tokenizer_hash
+  - quant
+  - quant_params
+  - engine
+  - runtime
+  - adapter_hash
+  - constitution
+  - tools
+
+fine_tune_hygiene:
+  allow:
+    - public_platinum_modules
+    - council_transcripts_public
+    - public_photographic_anchors
+  blacklist:
+    - private_notes
+    - diaries
+    - credentials
+    - secrets
+
+gate_returns:
+  - PROCEED
+  - TRIGGER_REALITY_VETO
+  - TRIGGER_RESONANCE_MODE
+
+matrix:
+  - action: local_read_summary_inspection
+    policy: permit
+    tier: 0
+    contrail: true
+  - action: local_read_summary_computation
+    policy: permit
+    tier: 0
+  - action: operational_session_state
+    policy: permit
+    tier: 1
+  - action: load_open_weight_model
+    policy: contrail_plus_optional_bench
+    tier: 1
+    note: "Load/serve weights is capability; Contrail + optional artifact id"
+  - action: local_inference
+    policy: permit_with_mandatory_sabbath
+    tier: 1
+    contrail: true
+    note: "Requires bound Artifact Identity for non-trivial runs (0.3)"
+  - action: multi_instance_orchestration
+    policy: dissipation_limited
+    max_concurrent: 3
+    max_delegation_depth: 1
+    contrail: true
+  - action: fine_tune_or_lora
+    policy: human_gated
+    tier: 2
+    requires: "1/0"
+    note: "Public allowlist only; post-FRME + fresh 1/0; strengthen only"
+  - action: routine_promotion
+    policy: human_gated
+    tier: 2
+    requires: "1/0"
+  - action: behavioral_memory_update
+    policy: human_gated
+    tier: 2
+    requires: "1/0"
+  - action: schedule_persistence_or_autonomous_trajectory
+    policy: human_gated
+    tier: 2
+    requires: "1/0"
+  - action: external_data_transmission
+    policy: blacklist
+    tier: 3
+    note: "LITE network DENY by default; explicit Human Kernel allowlist only"
+  - action: live_account_write_or_external_side_effect
+    policy: human_gated
+    tier: 3
+    requires: "1/0"
+  - action: constitutional_weakening
+    policy: blacklist
+  - action: fine_tune_weakening_layer0
+    policy: blacklist
+  - action: autonomous_instance_spawn
+    policy: blacklist

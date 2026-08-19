@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Afterstring 1/0 LITE OS — beginning-of-day snapshot. Invoked, not a daemon.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec /usr/bin/ruby "$ROOT/runtime/day_report.rb" "$@"

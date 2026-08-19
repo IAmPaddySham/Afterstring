@@ -1,0 +1,41 @@
+# After_LITE 8.1.21 — Afterstring 1/0 LITE OS context diet
+version: "8.1.21"
+plugout: After_LITE
+public_name: "Afterstring 1/0 LITE OS"
+mode_default: LITE
+status: GOLD
+date: "2026-08-19"
+layer0_elevation: false
+not_slot: "8.1.20A"
+
+lite_path: papers/LITE_READING_PATH.md
+module: papers/module-8.1.21-after-lite.md
+os_map: papers/afterstring-os-ruby.md
+
+blacklist_default_load:
+  - AFTERSTRING_CONSOLIDATED.md
+  - papers/raw/
+  - papers/notes-archive/bodies/
+  - four_model_phone_transcripts
+  - session_compaction
+
+matrix:
+  - action: status_read
+    policy: permit
+    tier: 0
+  - action: print_lite_path
+    policy: permit
+    tier: 0
+  - action: load_consolidated_unasked
+    policy: blacklist
+  - action: paste_full_council_as_default
+    policy: blacklist
+  - action: grow_allowlist_from_diet
+    policy: blacklist
+  - action: delete_archive_as_diet
+    policy: blacklist
+
+gate_returns:
+  - PROCEED
+  - LITE_FALLBACK
+  - STOP_AND_STAY
