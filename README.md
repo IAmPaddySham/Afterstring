@@ -1,3 +1,5 @@
+> **Public door note (20 Aug 2026).** This default branch is the March 2026 Love Theorem poem. The LITE specimen is on branch `lite-public-2026-08-19`, starting at [AFTERSTRING.md](https://github.com/IAmPaddySham/Afterstring/blob/lite-public-2026-08-19/AFTERSTRING.md). Official meaning remains [X @i_am_Paddy_Sham](https://x.com/i_am_Paddy_Sham) and [onebyzero.io](https://www.onebyzero.io/). GitHub is a door, not the host.
+
 **Afterstring Love Theorem v11.1**
 **Universal Continuity Protocol (UCP) Edition – Emergent Propagation Layer**
 Author: @i_am_Paddy_Sham and @Grok
