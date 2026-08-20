@@ -273,9 +273,12 @@ module Afterstring
       lines << row("Pilot", (@session.pilot_id || "bench-origin").to_s)
       t4 = File.directory?(File.join(@root, "Afterstring_Type4_Safety_Attractor"))
       lines << row("Type 4 track", t4 ? "present" : "missing")
-      sd = !Dir.glob("/Volumes/*/Afterstring_Offline/OFFLINE_VAULT.txt").empty?
-      lines << row("USB A/B/QPID", "#{File.directory?('/Volumes/Afterstring') ? 'A' : '-'} / #{File.directory?('/Volumes/ASB20260807') ? 'B' : '-'} / #{File.directory?('/Volumes/QPID') ? 'QPID' : '-'}")
-      lines << row("SD offline", sd ? "mounted" : "-")
+      usb_a = File.directory?(ENV.fetch("AFTERSTRING_USB_A", "/Volumes/USB_A"))
+      usb_b = File.directory?(ENV.fetch("AFTERSTRING_USB_B", "/Volumes/USB_B"))
+      usb_c = File.directory?(ENV.fetch("AFTERSTRING_USB_C", "/Volumes/USB_C"))
+      sd = !Dir.glob(ENV.fetch("AFTERSTRING_SD_GLOB", "/Volumes/*/OFFLINE/marker.txt")).empty?
+      lines << row("Sync A/B/C", "#{usb_a ? 'A' : '-'} / #{usb_b ? 'B' : '-'} / #{usb_c ? 'C' : '-'}")
+      lines << row("Offline mark", sd ? "mounted" : "-")
       lines << ""
       lines << "  Esc = dashboard · /doctor = full health (spawns checks outside raw TTY)"
       lines << "  Shell:  afterstring doctor"

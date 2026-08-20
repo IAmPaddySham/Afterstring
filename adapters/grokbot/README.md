@@ -22,7 +22,7 @@ This is **not** control of vendor-hosted Grok Bot cloud computers.
 ## Quick start
 
 ```bash
-cd ~/afterstring
+# from this clone root
 chmod +x bin/afterstring-grokbot-check adapters/grokbot/runner.rb
 
 ./bin/afterstring-grokbot-check --check-bots 3

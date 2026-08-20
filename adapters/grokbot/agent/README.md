@@ -2,7 +2,7 @@
 
 **Built by:** GrokBuild (host architecture) · 2026-08-17T21:20Z  
 **To be lived in by:** Grokbot (agent implement) — **not filled in this slice**  
-**Authorization Seat:** Human asked implement+sync in chat; Seat file still empty. See `STATUS.md`.
+**Authorization Seat:** Human asked implement+sync in chat; Seat file still empty. Live STATUS / LOOP_RUN / TEST_RUN are host-ops, not this public door.
 
 ## What this directory is
 
@@ -11,7 +11,7 @@ Empty **cage + harness**. Not a person. Not a hive. Not xAI Grok Bot (voluntary 
 | File | Owner after Seat/chat slice | Role |
 |------|-----------------------------|------|
 | `README.md` | Builder | This note |
-| `STATUS.md` | Builder | House vs tenant |
+| `STATUS.md` | host-ops only | Not published on this door |
 | `ALLOWLIST.json` | Builder schema; grow only by Human | Hash-pinned diet |
 | `RETRIEVE.md` | Builder | Manifest-only retrieve + provenance |
 | `GATES.md` | Builder | Capability firewall |

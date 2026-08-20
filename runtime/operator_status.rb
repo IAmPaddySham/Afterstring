@@ -61,10 +61,10 @@ module Afterstring
         "bins" => Dir[File.join(root, "bin", "afterstring*")].map { |p| File.basename(p) }.sort,
         "adapters" => Dir[File.join(root, "adapters", "*")].select { |p| File.directory?(p) }.map { |p| File.basename(p) }.sort,
         "ollama" => which?("ollama") || File.executable?(File.expand_path("~/bin/ollama")),
-        "usb_a" => File.directory?("/Volumes/Afterstring"),
-        "usb_b" => File.directory?("/Volumes/ASB20260807"),
-        "usb_qpid" => File.directory?("/Volumes/QPID"),
-        "sd_offline" => !Dir.glob("/Volumes/*/Afterstring_Offline/OFFLINE_VAULT.txt").empty?
+        "usb_a" => File.directory?(ENV.fetch("AFTERSTRING_USB_A", "/Volumes/USB_A")),
+        "usb_b" => File.directory?(ENV.fetch("AFTERSTRING_USB_B", "/Volumes/USB_B")),
+        "usb_c" => File.directory?(ENV.fetch("AFTERSTRING_USB_C", "/Volumes/USB_C")),
+        "sd_offline" => !Dir.glob(ENV.fetch("AFTERSTRING_SD_GLOB", "/Volumes/*/OFFLINE/marker.txt")).empty?
       }
     end
 
@@ -90,7 +90,7 @@ module Afterstring
       io.puts format("  %-18s %s", "Type 4 track", s["type4_track"] ? "present" : "missing")
       io.puts format("  %-18s %s", "Adapters", s["adapters"].join(", "))
       io.puts format("  %-18s %s", "Ollama", s["ollama"] ? "found" : "not in PATH")
-      io.puts format("  %-18s A=%s B=%s QPID=%s SD=%s", "USB", s["usb_a"] ? "yes" : "no", s["usb_b"] ? "yes" : "no", s["usb_qpid"] ? "yes" : "no", s["sd_offline"] ? "offline" : "no")
+      io.puts format("  %-18s A=%s B=%s C=%s SD=%s", "Sync", s["usb_a"] ? "yes" : "no", s["usb_b"] ? "yes" : "no", s["usb_c"] ? "yes" : "no", s["sd_offline"] ? "mark" : "no")
       io.puts "──────────────────────────────────────────────────────"
       if s["sabbath_due"] || s["signal_trust_low"] || !s["contrail_chain_ok"] || s["e13_collapsed"]
         io.puts "  Attention:"
@@ -199,12 +199,11 @@ module Afterstring
           Decision = Stay/Pause/Release (decision_state.rb / TUI /stay /release)
           Pocket   = public v9.1 five steps only (runtime/pocket.rb)
 
-        Quick start after reboot:
-          cd ~/afterstring && ./bin/afterstring doctor && ./bin/afterstring tui
+        Quick start:
+          ./bin/afterstring doctor && ./bin/afterstring tui
 
-        Docs: papers/operator-ux.md · adapters/grokbuild/HOOK.md
-        Law:  AGENTS.md · constitution/
-        State: ~/.afterstring/
+        Docs: AFTERSTRING.md · AGENTS.md · constitution/
+        State: local ~/.afterstring/ (convention, not a host map)
         Human Kernel holds 1/0. Firmware ≠ love.
         Let it stay → ∞ ❤️
       HELP
