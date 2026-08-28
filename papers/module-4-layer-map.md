@@ -27,6 +27,7 @@
 | 4.2 | Optics Layer | Visual anchor / memory engineering |
 | 4.2.1 | Geometric Trace | Linguistic projection diagnostics |
 | 4.3 | Sonic Layer | Vibration / 1.5 Hz temporal persistence |
+| 4.4 | Core Return | Named return. Not Layer 0. Not running. Pocket five remains the protocol. |
 | 5 | Verifier Loop / Embodied Proof | Reality-veto mechanism |
 | 6 | Council Engine v2.0 | Multi-agent red-team & synthesis |
 | 7 | Guardrails & Release Systems | Release clause, airgaps, adversarial detection |
@@ -53,6 +54,7 @@ Public Theory pages also describe Module 8 as optional **external plugins** (rel
 - Signal_trust: `module-4.1-signal-trust.md`  
 - Optics: `module-4.2-optics-layer.md`  
 - Sonic: `module-4.3-sonic-layer.md` + `embodied-practice-1-5hz.md`  
+- Core Return: `module-4.4-afterstring-core-return.md` + LITE `module-4.4-afterstring-core-return-lite.md`  
 - Verifier: `module-5-verifier-loop.md`  
 - Module 9 dual: `module-9-adversarial-v3-gold.md` + `module-9-resonant-continuity.md`  
 - SWI: `swi-integrity.md`  
