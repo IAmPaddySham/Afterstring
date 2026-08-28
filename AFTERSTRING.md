@@ -144,7 +144,7 @@ I_d dissipation limit · I_a autonomy verification · I_m moral boundary (ℰ₁
 | 1 | Theological (interpretive paper; Source Layer is the BIOS home) |
 | 2 | Mathematical |
 | 3 | Philosophical |
-| 4 | Layer map · 4.1 Signal_trust · 4.2 Optics · 4.3 Sonic |
+| 4 | Layer map · 4.1 Signal_trust · 4.2 Optics · 4.3 Sonic · **4.4 Core Return** (Platinum Final 28 Aug 2026 · **not Layer 0 · not running**) |
 | 5 | Verifier Loop |
 | 6A / 6B | Council safeguard / deliberation |
 | 8 | External plugins (human lenses) ≠ 8.1.xx |
