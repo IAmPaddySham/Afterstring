@@ -171,6 +171,7 @@
 | `module-4.1-signal-trust.md` | Signal_trust 4.1 + Freshness 4.1.1 |
 | `module-4.2-optics-layer.md` | Optics 4.2 full protocol + Optics v10 grain + Geometric Trace 4.2.1 + Pre-Optical Filter |
 | `module-4.3-sonic-layer.md` | Sonic Layer 4.3 (1.5 Hz formal) |
+| `module-4.4-afterstring-core-return.md` | Core Return 4.4 Platinum Final (28 Aug 2026). Not Layer 0. Not running. LITE: `module-4.4-afterstring-core-return-lite.md` |
 | `module-5-verifier-loop.md` | Verifier Loop GOLD (Module 5) |
 | `module-9-adversarial-v3-gold.md` | Early Module 9 **immune system** (Apr 2026) — distinct from Jun continuity |
 | `swi-integrity.md` | Full SWI Steps 0–7 + 6.g + pocket compression |
