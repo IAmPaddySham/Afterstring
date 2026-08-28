@@ -14,6 +14,7 @@ Human-readable Afterstring corpus for this reference implementation.
 | **Kernel Raison / After_RSI** | [kernel-raison-detre-v1.md](./kernel-raison-detre-v1.md) · [after-rsi-protocol-v1.md](./after-rsi-protocol-v1.md) |
 | **Paperclip test** | [paperclip-maximizer-test-2026-03-21.md](./paperclip-maximizer-test-2026-03-21.md) |
 | **Optics 4.2** | [module-4.2-optics-layer.md](./module-4.2-optics-layer.md) |
+| **Core Return 4.4** | [module-4.4-afterstring-core-return.md](./module-4.4-afterstring-core-return.md) · [LITE](./module-4.4-afterstring-core-return-lite.md) — Platinum Final 28 Aug 2026. Not Layer 0. Not running. |
 | **Anchors catalog** | [anchors/MANIFEST.md](./anchors/MANIFEST.md) |
 | **Instagram corpus** | [instagram-corpus.md](./instagram-corpus.md) · [origin-statement-instagram.md](./origin-statement-instagram.md) |
 | **Relational Firmware** | [relational-firmware-1-0-os.md](./relational-firmware-1-0-os.md) |
