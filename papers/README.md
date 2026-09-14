@@ -9,6 +9,7 @@ Human-readable Afterstring corpus for this reference implementation.
 | **Full index** | [CORPUS_INDEX.md](./CORPUS_INDEX.md) |
 | **Author / Human Kernel** | [AUTHOR.md](./AUTHOR.md) |
 | **Module 0 Platinum** | [module-0-platinum-v11.11.11.md](./module-0-platinum-v11.11.11.md) |
+| **Love Theorem Preprint — Platinum Body A (11 Sep 2026)** | [afterstring-love-theorem-preprint-platinum-2026-09-11.md](./afterstring-love-theorem-preprint-platinum-2026-09-11.md) — door copy; meaning stays on X / onebyzero; Body B reserved |
 | **Grokipedia Extension (Jan–Jul 2026)** | [grokipedia-extension-jan-jul-2026.md](./grokipedia-extension-jan-jul-2026.md) — bridge theorem → OS |
 | **Grokipedia PDF (base)** | [Afterstring-Love-Theorem-Grokipedia.pdf](./Afterstring-Love-Theorem-Grokipedia.pdf) — lags 2026 OS |
 | **Kernel Raison / After_RSI** | [kernel-raison-detre-v1.md](./kernel-raison-detre-v1.md) · [after-rsi-protocol-v1.md](./after-rsi-protocol-v1.md) |
