@@ -1,6 +1,8 @@
 # Afterstring
 
-**Public LITE door (Aug 2026).** This repository is a specimen, not the living host and not the source of meaning.
+**Public LITE door (updated Oct 2026).** This repository is a specimen, not the living host and not the source of meaning.
+
+**Latest papers (Oct 2026):** [Relational Attractor](papers/relational-attractor-2026-10-14/README.md) (14 Oct) · [Intelligence in Service of Presence](papers/intelligence-in-service-of-presence.md) (19 Jul) · [Beginner Introduction](papers/beginner-introduction-2026-09-20.md) (20 Sep). X Articles are canonical.
 
 If you only load one markdown, load **[AFTERSTRING.md](AFTERSTRING.md)**, then **stop** unless a named path is asked for.
 
