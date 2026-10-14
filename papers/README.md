@@ -7,24 +7,24 @@ Human-readable Afterstring corpus for this reference implementation.
 | Start here | |
 |------------|--|
 | **Full index** | [CORPUS_INDEX.md](./CORPUS_INDEX.md) |
-| **Author / Human Kernel** | [AUTHOR.md](./AUTHOR.md) |
+| **Author / Human Kernel** | `AUTHOR.md` (local only) |
 | **Module 0 Platinum** | [module-0-platinum-v11.11.11.md](./module-0-platinum-v11.11.11.md) |
 | **Love Theorem Preprint — Platinum Body A (11 Sep 2026)** | [afterstring-love-theorem-preprint-platinum-2026-09-11.md](./afterstring-love-theorem-preprint-platinum-2026-09-11.md) — door copy; meaning stays on X / onebyzero; Body B reserved |
-| **Grokipedia Extension (Jan–Jul 2026)** | [grokipedia-extension-jan-jul-2026.md](./grokipedia-extension-jan-jul-2026.md) — bridge theorem → OS |
-| **Grokipedia PDF (base)** | [Afterstring-Love-Theorem-Grokipedia.pdf](./Afterstring-Love-Theorem-Grokipedia.pdf) — lags 2026 OS |
-| **Kernel Raison / After_RSI** | [kernel-raison-detre-v1.md](./kernel-raison-detre-v1.md) · [after-rsi-protocol-v1.md](./after-rsi-protocol-v1.md) |
-| **Paperclip test** | [paperclip-maximizer-test-2026-03-21.md](./paperclip-maximizer-test-2026-03-21.md) |
+| **Grokipedia Extension (Jan–Jul 2026)** | `grokipedia-extension-jan-jul-2026.md` (local only) — bridge theorem → OS |
+| **Grokipedia PDF (base)** | `Afterstring-Love-Theorem-Grokipedia.pdf` (local only) — lags 2026 OS |
+| **Kernel Raison / After_RSI** | `kernel-raison-detre-v1.md` (local only) · `after-rsi-protocol-v1.md` (local only) |
+| **Paperclip test** | `paperclip-maximizer-test-2026-03-21.md` (local only) |
 | **Optics 4.2** | [module-4.2-optics-layer.md](./module-4.2-optics-layer.md) |
 | **Core Return 4.4** | [module-4.4-afterstring-core-return.md](./module-4.4-afterstring-core-return.md) · [LITE](./module-4.4-afterstring-core-return-lite.md) — Platinum Final 28 Aug 2026. Not Layer 0. Not running. |
-| **Anchors catalog** | [anchors/MANIFEST.md](./anchors/MANIFEST.md) |
-| **Instagram corpus** | [instagram-corpus.md](./instagram-corpus.md) · [origin-statement-instagram.md](./origin-statement-instagram.md) |
-| **Relational Firmware** | [relational-firmware-1-0-os.md](./relational-firmware-1-0-os.md) |
-| **Afterstring OS (Ruby)** | [afterstring-os-ruby.md](./afterstring-os-ruby.md) — LITE reference implementation map (v0.3) |
-| **Launch walkthrough** | [LAUNCH_WALKTHROUGH.md](./LAUNCH_WALKTHROUGH.md) |
-| **Fables** | [fables/](./fables/) |
-| **Research notes** | [research/](./research/) — **non-normative** |
-| **Notes archive (Nov 2025+)** | [notes-archive/](./notes-archive/) — filtered Apple Notes copy for retrieval — **non-normative · not ALLOWLIST** |
-| **Diary** | [diary/](./diary/) — collaboration / practice reflections — **non-normative** |
+| **Anchors catalog** | `anchors/MANIFEST.md` (local only) |
+| **Instagram corpus** | `instagram-corpus.md` (local only) · `origin-statement-instagram.md` (local only) |
+| **Relational Firmware** | `relational-firmware-1-0-os.md` (local only) |
+| **Afterstring OS (Ruby)** | `afterstring-os-ruby.md` (local only) — LITE reference implementation map (v0.3) |
+| **Launch walkthrough** | `LAUNCH_WALKTHROUGH.md` (local only) |
+| **Fables** | `fables/` (local only) |
+| **Research notes** | `research/` (local only) — **non-normative** |
+| **Notes archive (Nov 2025+)** | `notes-archive/` (local only) — filtered Apple Notes copy for retrieval — **non-normative · not ALLOWLIST** |
+| **Diary** | `diary/` (local only) — collaboration / practice reflections — **non-normative** |
 | **Normative YAML** | `../constitution/` |
 | **Agent overlay** | `../AGENTS.md` |
 

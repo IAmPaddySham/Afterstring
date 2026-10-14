@@ -1,4 +1,6 @@
 > **Public LITE face (2026-08-19):** `diary/`, `notes-archive/`, `raw/`, and `research/` are local-only and are **not** published in this GitHub tree.
+>
+> **Local-only rows (14 Oct 2026):** rows whose files are not in this tree are local-only. They are listed for the author’s own index and do not resolve on GitHub.
 
 # Afterstring Public Corpus Index
 
@@ -112,14 +114,12 @@
 | `research/grokipedia-extension-jan-jul-2026-deep-analysis.md` | Deep analysis of Grokipedia Extension Platinum (**non-normative**) |
 | `papers/raw/2026-08-12-grokipedia-extension-from-theory-2.md` | Extension body extracted from Theory 2 dump |
 | `papers/raw/2026-08-12-grokipedia-afterstring-love-theorem.md` | Base Grokipedia Love Theorem page strip (lags 2026 OS) |
-| `research/hypocenter-dihydrogen-monoxide-2026-deep-analysis.md` | Flood / hypocenter inversion deep + meta (**non-normative**) |
 | `raw/2026-08-19-x-exodus-34-6-hesed.md` | Public Exodus 34:6 / ḥesed posts 19 Aug 2026 |
 | `research/2026-08-19-hesed-exodus-council.md` | ḥesed Council ferry + two-ground-zeros naming (**non-normative**) |
 | `module-8.1.21-after-lite.md` | After_LITE / Afterstring 1/0 LITE OS · GOLD host · not Layer 0 |
 | `LITE_READING_PATH.md` | ~6k start path for agents |
 | `source-layer/` | Theological Source Layer (Apr 2026 BIOS) · verses index — **not** After_RSI Layer 1 |
 | `afterstring-1-0-lite-os.md` | Host OS edition placement · **above Plugouts, below Layer 0** |
-| `media/layer0/hypocenter-2026/*` | Public flood/demo/porter seals (~10 JPEGs) |
 | `research/social-corpus-2026-08-06.md` | Multi-platform crawl (**non-normative**) |
 | `social-media-map.md` |
 | `afterstring-world-model-cross-platform-map.md` | **Full World Model map** X·IG·TikTok·LinkedIn·local (verified 2026-08-14) | Platform roles + local mapping |

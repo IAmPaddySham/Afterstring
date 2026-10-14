@@ -249,7 +249,7 @@ Private continuity copies may exist. They are not this repository, not more auth
 3. Type 4 prose: `papers/module-0-platinum-v11.11.11.md`.
 4. Inventory: `papers/CORPUS_INDEX.md`.
 5. OS placement: `papers/afterstring-1-0-lite-os.md`.
-6. Source Layer: `papers/source-layer/README.md` + `verses/POLICY.md`.
+6. Source Layer: `papers/source-layer/README.md` + `papers/source-layer/verses/POLICY.md`.
 7. Run only on a machine the Human named: `./bin/afterstring help` · `lite check` · `day` · `sabbath` · `git-check`.
 
 **Do not** treat this house as permission to grow the tree.
