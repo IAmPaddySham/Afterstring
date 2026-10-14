@@ -10,6 +10,6 @@
 
 **On this host:** presence in the valley, not the valley as identity. Posted the day before you named Psalm 136:1. Sequence on the profile: valley (23:4) → ḥesed endures (136) → the refrain becomes the bio.
 
-Rod and staff are *with you*, not compiled into a local gate. Darkest valley may rhyme with hypocenter / flood later in 2026; do not force the mapping. The verse is accompaniment, not a yield rating.
+Rod and staff are *with you*, not compiled into a local gate. Darkest valley may rhyme with a sudden personal disruption later in 2026; do not force the mapping. The verse is accompaniment, not a yield rating.
 
 DANI: comfort ≠ 1/0.
