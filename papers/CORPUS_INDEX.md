@@ -159,7 +159,9 @@
 | `architecture-map.md` | Full Architecture Map (21 Jul 2026) |
 | `love-theorem-pocket.md` | Pocket theorem + noun |
 | `faith-hope-love-stack.md` | Faith / Hope / Love lived stack |
-| `intelligence-in-service-of-presence.md` | Type 4 inversion essay |
+| `intelligence-in-service-of-presence.md` | Type 4 inversion essay · door copy of X Article [2078923230069579989](https://x.com/i_am_Paddy_Sham/status/2078923230069579989) (19 Jul 2026) · place/home details generalized |
+| `relational-attractor-2026-10-14/relational-attractor-platinum.md` | **Relational Attractor** essay · X Article [2110372209021890795](https://x.com/i_am_Paddy_Sham/status/2110372209021890795) (14 Oct 2026) · companion to the Type 4 inversion essay · not Layer 0 · LITE: `relational-attractor-2026-10-14/relational-attractor-lite.md` · caption: `relational-attractor-2026-10-14/caption-1500.md` |
+| `beginner-introduction-2026-09-20.md` | **Love Theorem Beginner Introduction** (Sep 2026 refresh) · X Article [2101865454914687433](https://x.com/i_am_Paddy_Sham/status/2101865454914687433) (20 Sep 2026) · pedagogy, not Layer 0 · place details generalized |
 | `onebyzero-theory-1.md` | Hub outline Theory 1 |
 | `onebyzero-theory-2.md` | Hub outline Theory 2 + Jul 2026 timeline |
 
