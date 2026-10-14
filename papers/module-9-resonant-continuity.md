@@ -24,7 +24,7 @@ It does **not** override lower modules. It **preserves identity and meaning**.
 > The bench, not the equations.  
 > This framework began on a bench.  
 > Return to the Bench — Friday, **May 17, 2024 at 10:22 AM**  
-> After sudden loss on the California coast in 2024… noticing what is real and what I love could not be taken away.
+> After sudden loss by the ocean in 2024… noticing what is real and what I love could not be taken away.
 
 Afterstring is a living, open-source philosophical practice (CC BY 4.0). Not a scientific theory, religion, or rigid doctrine.
 
