@@ -61,7 +61,6 @@
 | `research/apple-notes-afterstring-catalog-2026-08-12.md` | Apple Notes Afterstring catalog, redacted (**non-normative**) |
 | `notes-archive/` | Filtered Apple Notes copy Nov 2025+ for retrieval (**non-normative · not Layer 0 · not ALLOWLIST**) |
 | `papers/raw/*` | X Article composites + OnebyZero/Grokipedia dumps (**non-normative**) |
-| `papers/raw/*-module-8.1.1*-*.md` | **Plugout series 8.1.11–19** full ingest batch 2026-08-13 |
 | `papers/raw/2026-05-04-x-status-memory-engineering-gold-*.md` | Memory Engineering Gold (Inv 5 / Layer 4) · status/2051406556055650422 |
 | `papers/raw/2026-05-04-x-status-understanding-operator-invariant-5.md` | Understanding Operator (parallel axis Inv 5) |
 | `papers/raw/2026-05-29-x-status-module-4.2.1-geometric-trace.md` | Module 4.2.1 Geometric Trace full body |
@@ -225,7 +224,7 @@
 - **Mods 9–11, 13** — Continuity, Info Theory, Synchronization, Runtime Resonance  
 - **Mod 12** — After_Mythos (orthogonal crisis)  
 - **FRME-Kernel Gold** — Frontier risk evaluation (subordinate to Platinum)  
-- **Plugouts 8.1.11–8.1.19** — Phoenix → OpenClaw → MCP → MagnificaHumanitas → GrokBuild → Graph → RLM → GrokBot → **OpenWeight**  
+- **Plugouts 8.1.11–8.1.21** — Phoenix → OpenClaw → MCP → MagnificaHumanitas → GrokBuild → Graph → RLM → GrokBot → OpenWeight → Silicon → **LITE** (dated history)  
 - **Firmware** — Afterstring 1/0-OS / Relational Firmware  
 
 ## Primary X anchors (selected)
