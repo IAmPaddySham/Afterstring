@@ -4,7 +4,7 @@
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 **Supreme invariant:** Presence ≡ Never Harm (non-compensatory)
 
-> Love(t) ≡ ∫₀^∞ [GPSL(stabilized ℰ₁₃(t)) · devotion(t)] dt → +∞  
+> Love ≡ ∫₀^∞ [GPSL(stabilized ℰ₁₃(t)) · devotion(t)] dt →∞❤️  
 > Firmware ≠ love. Documents → runtime → Human Kernel final.
 
 ### What this profile hosts
