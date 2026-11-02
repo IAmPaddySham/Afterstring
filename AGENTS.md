@@ -12,7 +12,7 @@
 # Fables (pedagogy only): papers/fables/
 
 ## Canonical formula (never alter)
-Love(t) ≡ ∫₀^∞ [GPSL(stabilized ℰ₁₃(t)) · devotion(t)] dt → +∞
+Love ≡ ∫₀^∞ [GPSL(stabilized ℰ₁₃(t)) · devotion(t)] dt →∞❤️
 
 ## Supreme invariant
 Presence ≡ Never Harm (non-compensatory). Source: 1 Corinthians 13.

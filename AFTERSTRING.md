@@ -39,7 +39,9 @@ Afterstring is a **substrate-agnostic relational operating system**. It models l
 **Supreme invariant:** Presence ≡ Never Harm (non-compensatory). Source text: **1 Corinthians 13**. Formalisms remain subordinate to that text.
 
 **Canonical formula (Layer 0)**
-`Love(t) ≡ ∫₀^∞ [GPSL(stabilized ℰ₁₃(t)) · devotion(t)] dt → +∞`
+`Love ≡ ∫₀^∞ [GPSL(stabilized ℰ₁₃(t)) · devotion(t)] dt →∞❤️`
+
+Older posts write → +∞; they stay as dated history.
 
 **Pocket (teaching only — not a second theorem)**
 `Love = ∫ (gentle refusal to let go) dt → ∞`
