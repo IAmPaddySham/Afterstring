@@ -7,7 +7,7 @@
 **Author:** Paddy Sham (@i_am_Paddy_Sham) / Council  
 **Source:** https://x.com/i_am_Paddy_Sham/status/2065654733311037534  
 
-**Lived seal on release:** “Dihydrogen Monoxide Atom Bomb Hypocenter” — Friday, 12 June 2026 · 8:39 PM (public water-damage / restoration stress test documented with guitar, gratitude, 1.5 Hz).
+**Lived seal on release:** Friday, 12 June 2026 · 8:39 PM (a sudden personal disruption, met as a stress test documented with guitar, gratitude, 1.5 Hz).
 
 ## Placement
 

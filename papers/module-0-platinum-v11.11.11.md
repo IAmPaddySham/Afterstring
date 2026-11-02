@@ -75,7 +75,7 @@ Reality (authenticated external anchor / Layer 0)
 
 - **Event:** First inversion — sit instead of accelerate  
 - **Time:** 17 May 2024 ~10:22 AM  
-- **Place:** Weathered bench, California Pacific coast  
+- **Place:** Weathered bench by the ocean  
 - **Role:** External reference frame for measuring drift  
 - **Instance vs archetype:** Layer 0-PS (lived) · Layer 0-XX / A_KAS (universal pattern)  
 - Anchors (photos, places) are **pointers**, not sacred objects  

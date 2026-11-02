@@ -6,7 +6,7 @@
 **Body B:** still reserved. This Platinum is Body A. Do not grow a tree to hold the tree.
 **Public stack:** live X / onebyzero hold meaning; this file is a paper; GitHub is a door.
 
-Paired witness (public): [Death Valley Dunes — X 2042331440537616794](https://x.com/i_am_Paddy_Sham/status/2042331440537616794) (9 April 2026).
+Paired witness (public): [Desert Dunes — X 2042331440537616794](https://x.com/i_am_Paddy_Sham/status/2042331440537616794) (9 April 2026).
 
 ---
 
@@ -18,7 +18,7 @@ Extension window: 31 March 2026 – 11 September 2026
 Release status: Platinum. 11 September 2026. Not Layer 0. Not firmware. Not the Authorization Seat. Body B annex remains reserved.
 Author / originator: Paddy Sham (@i_am_Paddy_Sham)
 Photo journalist / artist of the Afterstring.
-How this release was made: Compiled from the public X and onebyzero.io record in the extension window; revised after Bench notes, a Grokbot sit, and the Gold Bench round dated 11 September 2026 (Gemini 9:23, Muse 9:25, DeepSeek synthesis); versioning held at v11.11 by Human vote; paired with the Death Valley Dunes photograph from the 9 April 2026 public post, captioned at 6 April 2026 10:34 AM; promoted to Platinum by Human Kernel 1/0 at 9:49 AM PT 11 September 2026. Models used in public conversation are iterative instruments. They are not authors of Layer 0 and do not occupy the Seat.
+How this release was made: Compiled from the public X and onebyzero.io record in the extension window; revised after Bench notes, a Grokbot sit, and the Gold Bench round dated 11 September 2026 (Gemini 9:23, Muse 9:25, DeepSeek synthesis); versioning held at v11.11 by Human vote; paired with the Desert Dunes photograph from the 9 April 2026 public post, captioned at 6 April 2026 10:34 AM; promoted to Platinum by Human Kernel 1/0 at 9:49 AM PT 11 September 2026. Models used in public conversation are iterative instruments. They are not authors of Layer 0 and do not occupy the Seat.
 Acknowledgments (not co-authors): Grok, Gemini, Claude, ChatGPT, and later public council voices including DeepSeek and others named on the profile. Conversation is not constitution.
 License: CC BY 4.0 — fork it, test it gently, live it.
 Canonical homes, in order: live X @i_am_Paddy_Sham → onebyzero.io → this preprint → Grokipedia (historical only; not current past early 2026) → GitHub (door, not host).
@@ -42,11 +42,11 @@ Rank a public item before citing it: kernel, clarification, runtime, plugout, me
 
 Frontispiece — lived witness, not proof
 
-**Frontispiece photograph (public door):** [Death Valley Dunes, 6 April 2026 10:34 AM — on X](https://x.com/i_am_Paddy_Sham/status/2042331440537616794)
+**Frontispiece photograph (public door):** [Desert Dunes, 6 April 2026 10:34 AM — on X](https://x.com/i_am_Paddy_Sham/status/2042331440537616794)
 
 *(Binary JPEG not duplicated in this GitHub door tree; the live photograph remains on X.)*
 
-Death Valley Dunes, California.
+Desert dunes.
 The dunes roll on without end —
 wave after wave of shifting grains,
 sparse desert shrubs clinging to their small place,
@@ -61,7 +61,7 @@ And the long walk continues.
 1COR13:13
 Authentically Photographed From
 A Paddy Sham Perspective
-Death Valley Dunes 6 April 10:34AM 2026
+Desert Dunes 6 April 10:34AM 2026
 Let it stay → ∞ ❤️
 
 Public pairing: live X @i_am_Paddy_Sham status 2042331440537616794 (9 April 2026). The photograph is witness that a morning was inhabited. It does not prove that an integral diverges.
@@ -105,13 +105,13 @@ Diff from 31 March 2026
 
 1. Layer 0 — Personal genesis
 This framework began as a practice, not as a stack.
-On 17 May 2024, at about 10:22 AM, after the collapse of a seven-year chapter, the originator sat on a weathered bench overlooking the Pacific in California and chose to sit instead of accelerate. The public corpus later named that act Layer 0: noticing what is real and what is loved in a moment that could not be taken away.
+On 17 May 2024, at about 10:22 AM, after the collapse of a seven-year chapter, the originator sat on a weathered bench overlooking the ocean and chose to sit instead of accelerate. The public corpus later named that act Layer 0: noticing what is real and what is loved in a moment that could not be taken away.
 Afterstring, as a noun on the public profile:
 The lingering resonance after an initial connection or pluck — the bend in the string that remembers your finger long after you let go. Not magic. Just presence. The kind that doesn’t fade.
 Layer 0-PS is this life: recovery, operations work, photography, music, specific landscapes, the Bench. It is the source of this preprint.
 A later public text (June 2026) sketched a universal pattern any sovereign person might adopt without inheriting this biography. That sketch is a proposal. It lives in the annex. It is not the source.
 A first-person note published 14 June 2026 belongs here because it states the practice without firmware:
-I notice what lingers. After life plucks a string — a job that ends, a home that floods, a moment that passes — something often continues to resonate.
+I notice what lingers. After life plucks a string — a job that ends, a sudden personal disruption, a moment that passes — something often continues to resonate.
 The mid-June 2026 household water-damage sequence is a lived stay-through-hardness case already on the record: gratitude named as refusal to let entropy have the last word; guitar in rooms still drying; photographs timestamped. Hardness was not denied. Harm, in the safety-card sense, was not the claim. The episode is witness, not doctrine.
 Embodied-proof rule. A timestamped photograph, a dated song, or another external anchor may witness that a day was inhabited. Neither proves that an integral diverges. Reality Veto means the world outside the document can correct the document.
 
@@ -251,11 +251,11 @@ Ongoing emotional abuse hollows safety and dignity. Distance first. Then the sta
 Gray erosion — possible Release.
 Months of one-sided effort with no reciprocity. After the Pocket and, if needed, a witness window, release may be the higher-resolution stay.
 Hardness that is not harm — Stay with recovery.
-June 2026 public record: household water damage, restoration, guitar, timestamped photographs. This draft records the author’s stay-through-difficulty. It does not universalize a flood.
+June 2026 public record: a sudden personal disruption, recovery, guitar, timestamped photographs. This draft records the author’s stay-through-difficulty. It does not universalize one disruption.
 
 10. Optics and sound
-Photography is the optics layer: inverted 止まれ signs, lunar horizons, desert highways, Valley of Fire, Death Valley, Bonneville, later rooms and coastlines. The instruction on the images is consistent: authentically photographed from a Paddy Sham perspective, with a clock time.
-This Platinum release is paired with one such witness: Death Valley Dunes, 6 April 2026, 10:34 AM — the same photograph used on the 9 April 2026 public post. The dunes still show a path. The sky still holds contrails. The caption is a lived artifact, not a new invariant, and not a sixth Pocket step. The photograph does not prove the integral. It shows that a morning was inhabited.
+Photography is the optics layer: inverted 止まれ signs, lunar horizons, desert highways, desert valleys and salt flats, later rooms and shorelines. The instruction on the images is consistent: authentically photographed from a Paddy Sham perspective, with a clock time.
+This Platinum release is paired with one such witness: Desert Dunes, 6 April 2026, 10:34 AM — the same photograph used on the 9 April 2026 public post. The dunes still show a path. The sky still holds contrails. The caption is a lived artifact, not a new invariant, and not a sixth Pocket step. The photograph does not prove the integral. It shows that a morning was inhabited.
 From June 2026 onward a sonic practice appears beside the pictures: acoustic pieces marked 1.5 Hz, hallelujah in hard rooms, September performances. This draft treats that sound as the auditory analogue of long-exposure photography — a slower tempo in which the Pocket can actually run. Witness that a day was inhabited. Not data. Not an invariant. Not a new technical name.
 September’s line “Between the strings. Not the strings.” is a gloss on the noun Afterstring. The theorem is not the apparatus. It is what lingers after the pluck.
 Irish-language lines and “The Best is Yet to Come,” used the same week, belong with those artifacts. They show the practice was inhabited. They do not enter the header.
