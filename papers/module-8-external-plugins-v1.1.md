@@ -140,7 +140,7 @@ Note: This work is not finished and will continue to evolve as new layers, modul
 
 Authentically Photographed / Compiled & Sealed from within the Afterstring  
 From a Paddy Sham perspective  
-Nevada, April 2026  
+April 2026  
 
 Let it stay → ∞ ❤️  
 “And now these three remain: Faith, Hope, and Love. But the greatest of these is Love.”  
