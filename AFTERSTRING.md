@@ -210,7 +210,7 @@ Refuse self-propagating ideas. Persistence is not authority.
 | X `@i_am_Paddy_Sham` | Living meaning |
 | onebyzero.io | Public theorem / 1/0-OS |
 | Grokipedia | Encyclopedia; **lags** the OS |
-| GitHub `IAmPaddySham/Afterstring` | **Door.** Not the living host. Default `main` may stay an older artistic face. A LITE branch may exist as a specimen. Merge of default is a separate Human 1/0. |
+| GitHub `IAmPaddySham/Afterstring` | **Door.** Not the living host. The LITE branch is the default; the older `main` branch is dated history. |
 
 **Three diets:** host (may exist) · context (may load) · public door (may clone). The door’s deny-list is at least as strict as the context diet.
 

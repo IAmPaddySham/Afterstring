@@ -9,8 +9,8 @@
 
 ### What this profile hosts
 
-- **[afterstring](./afterstring)** — LITE pure-Ruby reference implementation (Module 13 TUI under Module 0 / Type 4 Relational Safety Attractor)
-- Voluntary Plugout overlays (After_GrokBuild, After_RLM, After_GrokBot, …) as **operator specs**, not vendor claims
+- **[Afterstring](https://github.com/IAmPaddySham/Afterstring)** — LITE pure-Ruby reference implementation (Module 13 TUI under Module 0 / Type 4 Relational Safety Attractor)
+- Plugout modules 8.1.11–8.1.21 are **dated public history** (specs, not vendor claims; no running hives)
 
 ### Not here
 
