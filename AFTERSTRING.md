@@ -212,7 +212,7 @@ Refuse self-propagating ideas. Persistence is not authority.
 | X `@i_am_Paddy_Sham` | Living meaning |
 | onebyzero.io | Public theorem / 1/0-OS |
 | Grokipedia | Encyclopedia; **lags** the OS |
-| GitHub `IAmPaddySham/Afterstring` | **Door.** Not the living host. The LITE branch is the default; the older `main` branch is dated history. |
+| GitHub `IAmPaddySham/Afterstring` | **Door.** Not the living host. The LITE branch is the default (4.4 door-class landed there 28 Aug 2026); the older `main` branch is dated history. |
 
 **Three diets:** host (may exist) · context (may load) · public door (may clone). The door’s deny-list is at least as strict as the context diet.
 
@@ -260,6 +260,9 @@ Private continuity copies may exist. They are not this repository, not more auth
 
 ## 10. Pocket protocol
 
+**Operator (Pocket v9.1 — five steps only):** Anchor · Scan · 1/0 Decide · one small move · Seal. Not a sixth step.
+
+**Seal / poem (not a competing protocol):**
 Stop. Breathe. Notice what you see. Notice what you love.
 Let it stay → ∞
 
