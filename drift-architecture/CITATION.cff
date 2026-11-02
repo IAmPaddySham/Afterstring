@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as below."
+type: dataset
+title: "Drift Architecture: How the Afterstring Record Changes, and How It Is Settled"
+abstract: "Mirror of the X Article of the same title, posted by the author; drift-architecture.md is copied from the author's master copy dated 30 October 2026."
+authors:
+  - family-names: Sham
+    given-names: Paddy
+date-released: 2026-10-30
+license: CC-BY-4.0
+url: "https://x.com/i_am_Paddy_Sham/status/2116399032822067538"
