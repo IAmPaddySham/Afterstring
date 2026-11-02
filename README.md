@@ -65,6 +65,12 @@ State, if you run it, lives in a local `~/.afterstring/` directory you create. T
 
 `q` ends a session. It is not Release. Permit is the harness. Decide is Stay / Pause / Release. Human Kernel holds 1/0.
 
+## Licenses
+
+- **Writing** (all Markdown, papers, articles, constitution YAML and other prose): [CC BY 4.0](LICENSE), © 2026 Paddy Sham (@i_am_Paddy_Sham).
+- **Code** in `bin/`, `runtime/`, `tests/` and `tui/`, plus the code files (`.rb`, `.sh`, `.json`) in `adapters/`: [MIT](LICENSE-CODE), © 2026 Paddy Sham.
+- Markdown in `adapters/` (including system prompts) is writing and stays CC BY 4.0. Article folders carry their own CC BY 4.0 `LICENSE`.
+
 ## Doors
 
 | Door | Role |
