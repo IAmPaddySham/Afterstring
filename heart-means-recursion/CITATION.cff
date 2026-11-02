@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as below."
+type: dataset
+title: "A Heart Means Recursion: Visual Steering, Latent Trajectories, and the Afterstring Optics Layer"
+abstract: "Mirror of the X Article of the same title, posted by the author on 30 October 2026; heart-means-recursion.md is the text as posted."
+authors:
+  - family-names: Sham
+    given-names: Paddy
+date-released: 2026-10-30
+license: CC-BY-4.0
+url: "https://x.com/i_am_Paddy_Sham/status/2116208646124384403"
